@@ -40,6 +40,88 @@ body {
   border: #1d1d1e solid 1px;
 }
 
+.profile-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "section-img section-info";
+  gap: 1rem;
+  width: 100%;
+  border: #1d1d1e solid 1px;
+}
+
+.section-img {
+  grid-area: section-img;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #1d1d1e solid 1px;
+  padding: 1rem;
+}
+
+.section-img img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.profile-location {
+  display: flex;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #555555;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-connect {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  margin-top: 1rem;
+  max-width: 20rem;
+}
+
+.profile-connect img {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.625rem;
+    object-fit: cover;
+}
+
+.btn-contact{
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.section-info {
+  grid-area: section-info;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: #1d1d1e solid 1px;
+  padding: 1rem;
+}
+.section-info h1{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+.section-info h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section-info p{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
 .footer {
     width: 100%;
     background: #1d1d1e;
@@ -51,4 +133,35 @@ body {
     flex-direction: column;
     border: #1d1d1e solid 1px;
     
+}
+
+@media screen and (max-width: 43.125rem) {
+    .main-wrapper {
+        width: 95%;
+    }
+
+    .profile-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "section-img"
+            "section-info";
+    }
+
+    .section-img {
+        width: 100%;
+    }
+
+    .section-img img {
+      width: 100%;
+      height: 10rem;
+      object-fit: contain;
+    }
+
+    .profile-connect img {
+        height: 2rem;
+        width: 2rem;
+        margin-right: 0.625rem;
+        object-fit: cover;
+    }
+
 }

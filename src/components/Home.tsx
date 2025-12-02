@@ -8,6 +8,7 @@ import edu from '../assets/edu.png';
 import cv from '../assets/cv.png';
 import cursos from '../assets/cursos.png';
 import Project from './Project';
+import Stack from './Stack';
 
 function Home() {
     return (
@@ -15,6 +16,7 @@ function Home() {
             <Header />
             <div className="main-wrapper">
                 <Profile />
+
                 <Title icon={box} titleText="Proyectos personales" />
                 <section className="side-projects-section">
                     <Project />
@@ -22,9 +24,7 @@ function Home() {
 
                 <Title icon={layers} titleText="Tech Stack" />
                 <section className="stack-section">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum commodi magnam
-                    incidunt quidem rem repellendus rerum, debitis iste recusandae doloribus non
-                    corrupti necessitatibus quae? Autem nemo minima maxime quae?
+                    <Stack />
                 </section>
 
                 <Title icon={edu} titleText="Educación" />

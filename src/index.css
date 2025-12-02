@@ -181,6 +181,39 @@ body {
     object-fit: cover;
 }
 
+.stack-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.stack-item {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stack-item img {
+    height: 3rem;
+    width: 3rem;
+    object-fit: contain;
+}
+
+.stack-item p {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #555555;
+}
+
 .footer {
     width: 100%;
     background: #1d1d1e;
@@ -241,6 +274,11 @@ body {
         align-content: start;
         margin: 1.25rem auto;
         border: #1d1d1e solid 1px;
+      }
+
+      .stack-section {
+        padding-left: 3rem;
+        padding-right: 3rem;
       }
 
 }

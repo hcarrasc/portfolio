@@ -36,6 +36,18 @@ body {
   justify-content: left;
   align-items: center;
   width: 100%;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.title-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #0ea5e9 30%, #0ea5e9 30%, transparent);
 }
 
 .title-wrapper h2 {
@@ -172,7 +184,7 @@ body {
 }
 
 .project-card p{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .project-image {

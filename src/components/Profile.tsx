@@ -2,7 +2,7 @@ import img_de_perfil from '../assets/img_de_perfil.jpeg';
 import iconlinkedin from '../assets/iconlinkedin.png';
 import iconinstagram from '../assets/iconinstagram.png';
 import iconx from '../assets/iconx.png';
-import icongithub from '../assets/icongithub.png';
+import icongithub from '../assets/github_w.png';
 
 function Profile() {
     function handleContactme() {
@@ -29,10 +29,34 @@ function Profile() {
                     <img src={img_de_perfil} alt="Profile Picture" />
                     <div className="profile-location"> Concepción, Chile</div>
                     <div className="profile-connect">
-                        <img src={iconlinkedin} alt="LinkedIn Icon" />
-                        <img src={icongithub} alt="GitHub Icon" />
-                        <img src={iconinstagram} alt="Instagram Icon" />
-                        <img src={iconx} alt="X Icon" />
+                        <a
+                            href="https://linkedin.com/in/hcarrasc"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src={iconlinkedin} alt="LinkedIn Icon" />
+                        </a>
+                        <a
+                            href="https://github.com/hcarrasc"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src={icongithub} alt="GitHub Icon" />
+                        </a>
+                        <a
+                            href="https://instagram.com/hcarrasc"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src={iconinstagram} alt="Instagram Icon" />
+                        </a>
+                        <a
+                            href="https://x.com/Htcarrasco"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src={iconx} alt="X Icon" />
+                        </a>
                     </div>
                     <button className="btn-contact" onClick={handleContactme}>
                         Agenda una llamada

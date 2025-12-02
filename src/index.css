@@ -21,14 +21,12 @@ body {
 .header {
     height: 6.5rem;
     width: 100%;
-    border: #1d1d1e solid 1px;
 }
 
 .main-wrapper {
     width: 90%;
     max-width: 100rem;
     margin: 1.25rem auto;
-    border: #1d1d1e solid 1px;
 }
 
 .title-wrapper {
@@ -38,7 +36,6 @@ body {
   justify-content: left;
   align-items: center;
   width: 100%;
-  border: #1d1d1e solid 1px;
 }
 
 .title-wrapper h2 {
@@ -52,22 +49,20 @@ body {
   grid-template-areas: "section-img section-info";
   gap: 1rem;
   width: 100%;
-  border: #1d1d1e solid 1px;
 }
 
 .section-img {
   grid-area: section-img;
-  width: 15rem;
+  width: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: #1d1d1e solid 1px;
   padding: 1rem;
 }
 
 .section-img img {
   width: 100%;
-  height: 12rem;
+  height: 15rem;
   object-fit: cover;
 }
 
@@ -111,7 +106,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  border: #1d1d1e solid 1px;
   padding: 1rem;
 }
 .section-info h1{
@@ -135,7 +129,6 @@ body {
   padding: 0.625rem;
   align-content: start;
   margin: 1.25rem auto;
-  border: #1d1d1e solid 1px;
 }
 
 .project-card {
@@ -146,6 +139,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.project-card p{
+    font-size: 1.2rem;
 }
 
 .project-image {
@@ -176,8 +173,8 @@ body {
 }
 .project-stack img {
     margin-left: 0.625rem;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2rem;
+    width: 2rem;
     object-fit: cover;
 }
 
@@ -214,6 +211,64 @@ body {
     color: #555555;
 }
 
+.education-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-item{
+  margin-top: 1rem;
+  padding-left: 2rem;
+}
+
+.education-section h3{
+    margin-bottom: 1.5rem;
+}
+
+.cv-item{
+    margin-top: 1rem;
+  padding-left: 2rem;
+}
+.cv-item h3{
+    margin-bottom: 1rem;
+}
+
+.cv-item li{
+  font-size: 1.2rem;
+}
+
+.courses-section{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 0.625rem;
+  align-content: start;
+  margin: 1.25rem auto;
+}
+.course-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    border: #1d1d1e solid 1px;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+.course-item h3{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.courses-section img {
+    width: 80%;
+    height: 25rem;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
+
+
 .footer {
     width: 100%;
     background: #1d1d1e;
@@ -231,7 +286,6 @@ body {
     .main-wrapper {
         width: 95%;
     }
-
     .profile-wrapper {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -260,12 +314,10 @@ body {
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
-
     .section-info p{
         font-size: 1rem;
         margin-bottom: 1rem;
     }
-
     .side-projects-section{
         display: grid;
         grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -273,12 +325,14 @@ body {
         padding: 0.625rem;
         align-content: start;
         margin: 1.25rem auto;
-        border: #1d1d1e solid 1px;
       }
-
       .stack-section {
         padding-left: 3rem;
         padding-right: 3rem;
+      }
+      .courses-section{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+
       }
 
 }

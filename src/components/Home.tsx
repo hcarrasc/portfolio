@@ -9,6 +9,8 @@ import cv from '../assets/cv.png';
 import cursos from '../assets/cursos.png';
 import Project from './Project';
 import Stack from './Stack';
+import CV from './CV';
+import Courses from './Courses';
 
 function Home() {
     return (
@@ -28,25 +30,22 @@ function Home() {
                 </section>
 
                 <Title icon={edu} titleText="Educación" />
-                <section className="cv">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, et eius? Quaerat
-                    corrupti exercitationem, ipsum sit quod eligendi eos libero dolores, alias neque
-                    nesciunt tenetur iure tempora nulla inventore aperiam.
+                <section className="education-section">
+                    <div className="education-item">
+                        <h2>Magíster en Ingeniería Informática</h2>
+                        <h3>Universidad Andres Bello - 2023 a 2024</h3>
+                    </div>
+                    <div className="education-item">
+                        <h2>Ingeniería Civil Informática</h2>
+                        <h3>Universidad del Bio-Bio - 2008 a 2013</h3>
+                    </div>
                 </section>
 
                 <Title icon={cv} titleText="CV" />
-                <section className="cv">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, et eius? Quaerat
-                    corrupti exercitationem, ipsum sit quod eligendi eos libero dolores, alias neque
-                    nesciunt tenetur iure tempora nulla inventore aperiam.
-                </section>
+                <CV />
 
                 <Title icon={cursos} titleText="Courses" />
-                <section className="courses">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex explicabo
-                    nisi exercitationem ipsa numquam porro vero, amet esse provident facilis totam
-                    placeat! Expedita illum sed culpa esse repellat ipsa.
-                </section>
+                <Courses />
             </div>
 
             <Footer />

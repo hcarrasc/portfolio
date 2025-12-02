@@ -26,10 +26,6 @@ function Project() {
                     </div>
                 </div>
                 <p>
-                    Es un sistema full stack desarrollado con React, Node.js, Express, Python y
-                    MongoDB. Se compone de cuatro componentes principales:
-                    <br />
-                    <br />
                     <b> 1) Aplicacion Scraper </b>
                     desarrollada en Python, que escanea sitios web de las principales tiendas de
                     retail chilenas, almacenando ofertas de tipo Outlet en una instancia de MongoDB

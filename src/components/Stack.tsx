@@ -13,6 +13,7 @@ import pandas from '../assets/pandas.png';
 import spring from '../assets/spring.png';
 import swift from '../assets/swift.png';
 import jupyter from '../assets/jupyter.png';
+import php from '../assets/php.png';
 
 function Stack() {
     return (
@@ -76,6 +77,10 @@ function Stack() {
             <div className="stack-item">
                 <img src={swift} alt="Swift" />
                 <p>Swift</p>
+            </div>
+            <div className="stack-item">
+                <img src={php} alt="PHP" />
+                <p>PHP</p>
             </div>
         </>
     );

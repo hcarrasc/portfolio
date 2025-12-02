@@ -128,6 +128,59 @@ body {
     margin-bottom: 1rem;
 }
 
+.side-projects-section{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.625rem;
+  padding: 0.625rem;
+  align-content: start;
+  margin: 1.25rem auto;
+  border: #1d1d1e solid 1px;
+}
+
+.project-card {
+    background: white;
+    border: #1d1d1e solid 1px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-image {
+    width: 100%;
+    height: 40rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.625rem;
+}
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.project-title {
+    display: flex;
+}
+.project-title h2 {
+    margin-top: 0.65rem;
+}
+
+.project-stack {
+  margin-top: 0.625rem;
+    margin-left: auto;
+    gap: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+.project-stack img {
+    margin-left: 0.625rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: cover;
+}
+
 .footer {
     width: 100%;
     background: #1d1d1e;

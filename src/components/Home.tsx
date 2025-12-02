@@ -16,15 +16,16 @@ function Home() {
             <div className="main-wrapper">
                 <Profile />
                 <Title icon={box} titleText="Proyectos personales" />
-                <section className="side-projects">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, nam! Et illo ut
-                    facere, magni aspernatur ad perspiciatis ducimus vero veniam eveniet, nam
-                    perferendis dolores, voluptas dolore optio culpa facilis.
+                <section className="side-projects-section">
+                    <Project />
+                    <Project />
                 </section>
 
                 <Title icon={layers} titleText="Tech Stack" />
                 <section className="stack-section">
-                    <Project />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum commodi magnam
+                    incidunt quidem rem repellendus rerum, debitis iste recusandae doloribus non
+                    corrupti necessitatibus quae? Autem nemo minima maxime quae?
                 </section>
 
                 <Title icon={edu} titleText="Educación" />

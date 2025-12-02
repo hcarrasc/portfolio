@@ -233,4 +233,14 @@ body {
         margin-bottom: 1rem;
     }
 
+    .side-projects-section{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 0.625rem;
+        padding: 0.625rem;
+        align-content: start;
+        margin: 1.25rem auto;
+        border: #1d1d1e solid 1px;
+      }
+
 }

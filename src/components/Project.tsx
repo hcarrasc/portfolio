@@ -4,6 +4,7 @@ import nodejs from '../assets/nodejs.png';
 import express from '../assets/express.png';
 import mongodb from '../assets/mongodb.png';
 import python from '../assets/python.png';
+import docker from '../assets/docker.png';
 
 function Project() {
     return (
@@ -21,11 +22,12 @@ function Project() {
                         <img src={express} alt="Tech Icon 3" />
                         <img src={python} alt="Tech Icon 4" />
                         <img src={mongodb} alt="Tech Icon 5" />
+                        <img src={docker} alt="Tech Icon 6" />
                     </div>
                 </div>
                 <p>
                     Es un sistema full stack desarrollado con React, Node.js, Express, Python y
-                    MongoDB. Se compone de tres componentes principales:
+                    MongoDB. Se compone de cuatro componentes principales:
                     <br />
                     <br />
                     <b> 1) Aplicacion Scraper </b>
@@ -43,6 +45,15 @@ function Project() {
                     desarrollada con Node.js y Express, que sirve como intermediario entre el front
                     end y la base de datos, gestionando las solicitudes de los usuarios y
                     proporcionando los datos necesarios para la interfaz de usuario.
+                    <br />
+                    <br />
+                    <b> 4) Bot de Telegram </b>
+                    desarrollada con Python que envia las principales ofertas diarias a los usuarios
+                    suscritos a traves de Telegram.
+                    <br />
+                    <br />
+                    El sistema esta desplegado en contenedores Docker, lo que facilita su
+                    implementacion y escalabilidad.
                 </p>
             </div>
         </>

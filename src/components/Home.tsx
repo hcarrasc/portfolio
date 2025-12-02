@@ -18,7 +18,6 @@ function Home() {
                 <Title icon={box} titleText="Proyectos personales" />
                 <section className="side-projects-section">
                     <Project />
-                    <Project />
                 </section>
 
                 <Title icon={layers} titleText="Tech Stack" />

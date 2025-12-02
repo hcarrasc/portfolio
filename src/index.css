@@ -10,8 +10,8 @@ html {
 }
 
 body {
-    background: #f5f5f7;
-    color: black;
+    background: #0f172a;
+    color: #e2e8f0;
     font-family: 'LATO', sans-serif;
     display: flex;
     flex-direction: column;
@@ -70,7 +70,7 @@ body {
   display: flex;
   font-size: 1.2rem;
   margin-top: 0.5rem;
-  color: #555555;
+  color: #0ea5e9;
   align-items: center;
   justify-content: center;
 }
@@ -98,6 +98,36 @@ body {
   border: none;
   cursor: pointer;
   font-size: 1rem;
+  background: #0ea5e9;
+  color: #0f172a;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.btn-contact:hover {
+  background: #06b6d4;
+  transform: translateY(-2px);
+}
+
+.btn-contact-cv {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  background: #0ea5e9;
+  color: #0f172a;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.btn-contact-cv:hover {
+  background: #06b6d4;
+  transform: translateY(-2px);
 }
 
 .section-info {
@@ -132,8 +162,8 @@ body {
 }
 
 .project-card {
-    background: white;
-    border: #1d1d1e solid 1px;
+    background: #1e293b;
+    border: #334155 solid 1px;
     border-radius: 0.5rem;
     padding: 1rem;
     display: flex;
@@ -208,7 +238,7 @@ body {
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
-    color: #555555;
+    color: #0ea5e9;
 }
 
 .education-section {
@@ -244,8 +274,10 @@ body {
   padding: 0.625rem;
   align-content: start;
   margin: 1.25rem auto;
+
 }
 .course-item{
+    padding-top: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -255,6 +287,8 @@ body {
     border: #1d1d1e solid 1px;
     border-radius: 0.5rem;
     width: 100%;
+    background: #1e293b;
+    border: #334155 solid 1px;
 }
 .course-item h3{
     margin-top: 2rem;
@@ -271,8 +305,8 @@ body {
 
 .footer {
     width: 100%;
-    background: #1d1d1e;
-    color: white;
+    background: #0f172a;
+    color: #cbd5e1;
     padding: 1.25rem;
     margin-top: auto;
     height: 20rem;
@@ -291,6 +325,12 @@ body {
         grid-template-areas:
             "section-img"
             "section-info";
+    }
+    .btn-contact{
+      width: 70%;
+    }
+    .btn-contact-cv{
+      width: 70%;
     }
     .section-img {
         width: 100%;

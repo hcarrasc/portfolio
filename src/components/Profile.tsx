@@ -16,6 +16,12 @@ function Profile() {
         window.location.href = mailto;
     }
 
+    function handleDownloadCV() {
+        const cvUrl =
+            'https://drive.google.com/file/d/1-0A-NcqUnCqC8OLzy8Zo9RxmOiOif3Su/view?usp=sharing';
+        window.open(cvUrl, '_blank');
+    }
+
     return (
         <section>
             <div className="profile-wrapper">
@@ -29,7 +35,10 @@ function Profile() {
                         <img src={iconx} alt="X Icon" />
                     </div>
                     <button className="btn-contact" onClick={handleContactme}>
-                        Contáctame o agenda una llamada
+                        Agenda una llamada
+                    </button>
+                    <button className="btn-contact-cv" onClick={handleDownloadCV}>
+                        Descargar CV
                     </button>
                 </div>
                 <div className="section-info">

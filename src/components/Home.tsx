@@ -19,14 +19,14 @@ function Home() {
             <div className="main-wrapper">
                 <Profile />
 
-                <Title icon={box} titleText="Proyectos personales" />
-                <section className="side-projects-section">
-                    <Project />
-                </section>
-
                 <Title icon={layers} titleText="Tech Stack" />
                 <section className="stack-section">
                     <Stack />
+                </section>
+
+                <Title icon={box} titleText="Proyectos personales" />
+                <section className="side-projects-section">
+                    <Project />
                 </section>
 
                 <Title icon={edu} titleText="Educación" />

@@ -1,10 +1,10 @@
 import of_bot_01 from '../assets/of_bot_01.png';
-import atom from '../assets/atom.png';
-import nodejs from '../assets/nodejs.png';
-import express from '../assets/express.png';
-import mongodb from '../assets/mongodb.png';
-import python from '../assets/python.png';
-import docker from '../assets/docker.png';
+import atom from '../assets/techstack/atom.png';
+import nodejs from '../assets/techstack/nodejs.png';
+import express from '../assets/techstack/express.png';
+import mongodb from '../assets/techstack/mongodb.png';
+import python from '../assets/techstack/python.png';
+import docker from '../assets/techstack/docker.png';
 
 function Project() {
     return (

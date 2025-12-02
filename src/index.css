@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: #e4e4e9;
+    background: #f5f5f7;
     color: black;
     font-family: 'LATO', sans-serif;
     display: flex;
@@ -32,12 +32,18 @@ body {
 }
 
 .title-wrapper {
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: left;
   align-items: center;
   width: 100%;
   border: #1d1d1e solid 1px;
+}
+
+.title-wrapper h2 {
+    font-size: 2rem;
+    margin: 1rem;
 }
 
 .profile-wrapper {

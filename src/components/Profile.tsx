@@ -3,6 +3,7 @@ import iconlinkedin from '../assets/iconlinkedin.png';
 import iconinstagram from '../assets/iconinstagram.png';
 import iconx from '../assets/iconx.png';
 import icongithub from '../assets/github_w.png';
+import { sendGaEvent } from '../GA4/analitycs';
 
 function Profile() {
     function handleContactme() {
@@ -17,6 +18,10 @@ function Profile() {
     }
 
     function handleDownloadCV() {
+        sendGaEvent('download_cv', {
+            button_name: 'cv_button',
+            page: window.location.pathname,
+        });
         const cvUrl =
             'https://drive.google.com/file/d/1-0A-NcqUnCqC8OLzy8Zo9RxmOiOif3Su/view?usp=sharing';
         window.open(cvUrl, '_blank');

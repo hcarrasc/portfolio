@@ -7,6 +7,10 @@ import { sendGaEvent } from '../GA4/analitycs';
 
 function Profile() {
     function handleContactme() {
+        sendGaEvent('contact_me', {
+            button_name: 'contact_me_button',
+            page: window.location.pathname,
+        });
         const email = 'htcarrasc@gmail.com';
         const subject = 'Consulta desde el sitio';
         const body = 'Hola, me gustaría agendar un llamada contigo.';

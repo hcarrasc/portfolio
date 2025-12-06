@@ -11,11 +11,9 @@ import Project from './Project';
 import Stack from './Stack';
 import CV from './CV';
 import Courses from './Courses';
-// Importa todas las imágenes del techstack para asegurar que se incluyan en el build
 import techStackImages from '../assets/techstack/index.ts';
 
 function Home() {
-    // Usa techStackImages para forzar a Vite a incluir todas las imágenes en el build
     console.log(techStackImages.length);
 
     return (

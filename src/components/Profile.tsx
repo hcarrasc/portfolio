@@ -31,6 +31,34 @@ function Profile() {
         window.open(cvUrl, '_blank');
     }
 
+    function handleLinkedinLink() {
+        sendGaEvent('linkedin_link', {
+            button_name: 'linkedin_button',
+            page: window.location.pathname,
+        });
+    }
+
+    function handleGithubLink() {
+        sendGaEvent('github_link', {
+            button_name: 'github_button',
+            page: window.location.pathname,
+        });
+    }
+
+    function handleInstagramLink() {
+        sendGaEvent('instagram_link', {
+            button_name: 'instagram_button',
+            page: window.location.pathname,
+        });
+    }
+
+    function handleXLink() {
+        sendGaEvent('x_link', {
+            button_name: 'x_button',
+            page: window.location.pathname,
+        });
+    }
+
     return (
         <section>
             <div className="profile-wrapper">
@@ -39,9 +67,10 @@ function Profile() {
                     <div className="profile-location"> Concepción, Chile</div>
                     <div className="profile-connect">
                         <a
-                            href="https://linkedin.com/in/hcarrasc"
+                            href="https://linkedin.com/in/"
                             target="_blank"
                             rel="noopener noreferrer"
+                            onClick={handleLinkedinLink}
                         >
                             <img src={iconlinkedin} alt="LinkedIn Icon" />
                         </a>
@@ -49,6 +78,7 @@ function Profile() {
                             href="https://github.com/hcarrasc"
                             target="_blank"
                             rel="noopener noreferrer"
+                            onClick={handleGithubLink}
                         >
                             <img src={icongithub} alt="GitHub Icon" />
                         </a>
@@ -56,6 +86,7 @@ function Profile() {
                             href="https://instagram.com/hcarrasc"
                             target="_blank"
                             rel="noopener noreferrer"
+                            onClick={handleInstagramLink}
                         >
                             <img src={iconinstagram} alt="Instagram Icon" />
                         </a>
@@ -63,6 +94,7 @@ function Profile() {
                             href="https://x.com/Htcarrasco"
                             target="_blank"
                             rel="noopener noreferrer"
+                            onClick={handleXLink}
                         >
                             <img src={iconx} alt="X Icon" />
                         </a>

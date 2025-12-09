@@ -5,6 +5,7 @@ import mongodb from '../assets/techstack/mongodb.png';
 import python from '../assets/techstack/python.png';
 import docker from '../assets/techstack/docker.png';
 import js from '../assets/techstack/js.png';
+import ts from '../assets/techstack/typescript.png';
 import java from '../assets/techstack/java.png';
 import git from '../assets/techstack/git.png';
 import postgre from '../assets/techstack/postgre.png';
@@ -33,6 +34,10 @@ function Stack() {
             <div className="stack-item">
                 <img src={express} alt="Express" />
                 <p>Express</p>
+            </div>
+            <div className="stack-item">
+                <img src={ts} alt="TypeScript" />
+                <p>TypeScript</p>
             </div>
             <div className="stack-item">
                 <img src={python} alt="Python" />

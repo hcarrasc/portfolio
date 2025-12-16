@@ -8,6 +8,7 @@ import edu from '../assets/edu_w.png';
 import cv from '../assets/cv_w.png';
 import cursos from '../assets/diploma_w.png';
 import Project from './Project';
+import ProjectKanban from './ProjectKanban.tsx';
 import Stack from './Stack';
 import CV from './CV';
 import Courses from './Courses';
@@ -30,6 +31,7 @@ function Home() {
                 <Title icon={box} titleText="Proyectos personales" />
                 <section className="side-projects-section">
                     <Project />
+                    <ProjectKanban />
                 </section>
 
                 <Title icon={edu} titleText="Educación" />

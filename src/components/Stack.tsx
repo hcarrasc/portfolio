@@ -9,6 +9,7 @@ import ts from '../assets/techstack/typescript.png';
 import java from '../assets/techstack/java.png';
 import git from '../assets/techstack/git.png';
 import postgre from '../assets/techstack/postgre.png';
+import supabase from '../assets/techstack/supabase.png';
 import aws from '../assets/techstack/aws.png';
 import pandas from '../assets/techstack/pandas.png';
 import spring from '../assets/techstack/spring.png';
@@ -58,6 +59,10 @@ function Stack() {
             <div className="stack-item">
                 <img src={postgre} alt="PostgreSQL" />
                 <p>PostgreSQL</p>
+            </div>
+            <div className="stack-item">
+                <img src={supabase} alt="Supabase" />
+                <p>Supabase</p>
             </div>
             <div className="stack-item">
                 <img src={docker} alt="Docker" />

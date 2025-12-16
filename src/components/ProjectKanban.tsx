@@ -27,7 +27,7 @@ function ProjectKanban() {
                     representan distintos estados del flujo de trabajo.
                     <br />
                     <br />
-                    <b> 2) Backend de Supabase</b>
+                    <b> 2) Backend de Supabase </b>
                     que proporciona autenticación de usuarios mediante login de Google y
                     almacenamiento de datos en tiempo real.
                 </p>

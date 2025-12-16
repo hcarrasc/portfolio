@@ -181,6 +181,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    position: relative;
+    min-height: 600px;
 }
 
 .project-card p{
@@ -389,4 +391,44 @@ body {
 
       }
 
+}
+
+.project-buttons {
+    display: flex;
+    gap: 0.625rem;
+    flex-direction: row;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.btn-demo,
+.btn-code {
+    padding: 0.625rem 1.25rem;
+    border: 1px solid #0ea5e9;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-demo {
+    background-color: #0ea5e9;
+    color: #0f172a;
+}
+
+.btn-demo:hover {
+    background-color: #0284c7;
+    border-color: #0284c7;
+}
+
+.btn-code {
+    background-color: transparent;
+    color: #0ea5e9;
+}
+
+.btn-code:hover {
+    background-color: #0ea5e9;
+    color: #0f172a;
 }

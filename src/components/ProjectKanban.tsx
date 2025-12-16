@@ -31,6 +31,17 @@ function ProjectKanban() {
                     que proporciona autenticación de usuarios mediante login de Google y
                     almacenamiento de datos en tiempo real.
                 </p>
+                <div className="project-buttons">
+                    <a
+                        href="https://kanban-board-hcarrasc-hcarrascs-projects.vercel.app/"
+                        className="btn-demo"
+                    >
+                        Live Demo
+                    </a>
+                    <a href="https://github.com/hcarrasc/Kanban-board" className="btn-code">
+                        Ver código fuente
+                    </a>
+                </div>
             </div>
         </>
     );

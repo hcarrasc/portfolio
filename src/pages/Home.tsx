@@ -1,18 +1,19 @@
-import Header from './Header';
-import Footer from './Footer';
-import Title from './Title';
-import Profile from './Profile';
+import Header from '../components/Header.tsx';
+import Footer from '../components/Footer.tsx';
+import Title from '../components/Title.tsx';
+import Profile from '../components/Profile.tsx';
 import box from '../assets/projects_w.png';
 import layers from '../assets/stack_w.png';
 import edu from '../assets/edu_w.png';
 import cv from '../assets/cv_w.png';
 import cursos from '../assets/diploma_w.png';
-import Project from './Project';
-import ProjectKanban from './ProjectKanban.tsx';
-import Stack from './Stack';
-import CV from './CV';
-import Courses from './Courses';
+import Project from '../components/Project.tsx';
+import ProjectKanban from '../components/ProjectKanban.tsx';
+import Stack from '../components/Stack.tsx';
+import CV from '../components/CV.tsx';
+import Courses from '../components/Courses.tsx';
 import techStackImages from '../assets/techstack/index.ts';
+import ProjectWaveFlow from '../components/ProjectWaveFlow.tsx';
 
 function Home() {
     console.log(techStackImages.length);
@@ -32,6 +33,7 @@ function Home() {
                 <section className="side-projects-section">
                     <Project />
                     <ProjectKanban />
+                    <ProjectWaveFlow />
                 </section>
 
                 <Title icon={edu} titleText="Educación" />
